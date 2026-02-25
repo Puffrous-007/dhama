@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHAMAH AL JOUDAH PETROLEUM DOWNHOLES TOOLS COMPANY | Saudi Arabia</title>
+    <meta name="description" content="Leading provider of premium downhole tools and petroleum equipment in Saudi Arabia. Specializing in innovative solutions for the oil and gas industry.">
+    <meta name="keywords" content="petroleum, downhole tools, oil and gas, Saudi Arabia, drilling equipment, petroleum services">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0a3d62",
+                        secondary: "#1e5f8a",
+                        accent: "#f9a826",
+                        dark: "#1a1a2e",
+                        light: "#f8f9fa"
+                    },
+                    fontFamily: {
+                        'sans': ['Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        'heading': ['Montserrat', 'Segoe UI', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0a3d62 0%, #1e5f8a 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #f9a826;
+        }
+        .section-title.center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .testimonial-slide {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .testimonial-slide.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-light font-sans text-gray-800">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mr-3">
+                        <i class="fas fa-oil-can text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">DHAMAH AL JOUDAH</h1>
+                        <p class="text-sm text-gray-600">Petroleum Downholes Tools Company</p>
+                    </div>
+                </div>
+                
+                <nav class="w-full md:w-auto">
+                    <ul id="nav-list" class="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0"></ul>
+                </nav>
+                
+                <div class="mt-4 md:mt-0">
+                    <button id="mobile-menu-toggle" class="md:hidden text-primary text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-4">
+                <ul id="mobile-nav-list" class="space-y-3"></ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 font-heading">Innovating Downhole Solutions for Saudi Arabia's Petroleum Industry</h2>
+                    <p class="text-lg mb-6 opacity-90">DHAMAH AL JOUDAH is a premier provider of high-quality downhole tools and petroleum equipment, delivering reliable solutions to major oil and gas companies across the Kingdom of Saudi Arabia.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-accent text-white font-medium px-6 py-3 rounded-md hover:bg-yellow-600 transition">Contact Us</a>
+                        <a href="#projects" class="bg-transparent border-2 border-white text-white font-medium px-6 py-3 rounded-md hover:bg-white hover:text-primary transition">Our Projects</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/600/400?random=101" alt="Oil drilling rig in Saudi Arabia desert" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Information -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 section-title font-heading">About Our Company</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-2xl font-semibold text-dark mb-6">Leading the Future of Downhole Technology</h3>
+                    <p class="mb-4 text-gray-700">Established with a vision to revolutionize the petroleum industry in Saudi Arabia, DHAMAH AL JOUDAH PETROLEUM DOWNHOLES TOOLS COMPANY has grown to become a trusted partner for major oil and gas corporations across the region.</p>
+                    <p class="mb-4 text-gray-700">We specialize in the design, manufacturing, and supply of premium downhole tools that meet the rigorous demands of modern drilling operations. Our commitment to quality, innovation, and customer satisfaction has positioned us as an industry leader.</p>
+                    <p class="mb-6 text-gray-700">With a team of experienced engineers and technicians, we provide comprehensive solutions that enhance operational efficiency, safety, and productivity in even the most challenging drilling environments.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="bg-light p-4 rounded-lg">
+                            <div class="text-accent text-2xl mb-2">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h4 class="font-semibold text-primary">Quality Certified</h4>
+                            <p class="text-sm text-gray-600">ISO 9001:2015 certified operations</p>
+                        </div>
+                        <div class="bg-light p-4 rounded-lg">
+                            <div class="text-accent text-2xl mb-2">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4 class="font-semibold text-primary">Expert Team</h4>
+                            <p class="text-sm text-gray-600">50+ specialized engineers & technicians</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/600/500?random=102" alt="Company headquarters and team" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downhole Tools & Structures -->
+    <section id="tools" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 section-title center font-heading text-center">Our Downhole Tools & Structures</h2>
+            <p class="text-center text-gray-700 max-w-3xl mx-auto mb-12">We provide a comprehensive range of downhole tools designed for maximum performance, durability, and reliability in demanding drilling conditions.</p>
+            
+            <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Completed Projects -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 section-title font-heading">Projects with Major Petroleum Companies</h2>
+            <p class="text-gray-700 mb-10">We have successfully completed numerous projects with leading petroleum companies across Saudi Arabia, delivering exceptional results and building long-term partnerships.</p>
+            
+            <div id="projects-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 section-title font-heading">Client Feedback</h2>
+            <p class="text-center text-gray-300 max-w-3xl mx-auto mb-12">Hear what industry leaders say about our products and services.</p>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div id="testimonial-container" class="overflow-hidden"></div>
+                
+                <div class="flex justify-center mt-8 space-x-4">
+                    <button id="prev-testimonial" class="bg-white text-primary w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200 transition">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="next-testimonial" class="bg-white text-primary w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200 transition">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Address -->
+    <section id="contact" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 section-title font-heading">Contact Information</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-2xl font-semibold text-dark mb-6">Our Headquarters</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-accent text-xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary mb-1">Address</h4>
+                                <p class="text-gray-700">Industrial Area, Dhahran Street<br>Al Khobar 31952<br>Eastern Province, Saudi Arabia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-accent text-xl mr-4 mt-1">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary mb-1">Phone</h4>
+                                <p class="text-gray-700">+966 13 123 4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-accent text-xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary mb-1">Email</h4>
+                                <p class="text-gray-700">info@dhamah-aljoudah.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-accent text-xl mr-4 mt-1">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary mb-1">Business Hours</h4>
+                                <p class="text-gray-700">Sunday - Thursday: 8:00 AM - 5:00 PM<br>Friday - Saturday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-semibold text-primary mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-dark mb-6">Send Us a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent" required>
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-gray-700 mb-2">Company Name</label>
+                            <input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-primary text-white font-medium px-6 py-3 rounded-md hover:bg-secondary transition w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-accent flex items-center justify-center mr-3">
+                            <i class="fas fa-oil-can text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">DHAMAH AL JOUDAH</h3>
+                            <p class="text-sm text-gray-400">Petroleum Downholes Tools Company</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm max-w-md">Providing innovative downhole solutions to Saudi Arabia's petroleum industry since 2010.</p>
+                </div>
+                
+                <div>
+                    <ul id="footer-links" class="flex flex-wrap justify-center md:justify-end gap-6"></ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; <span id="current-year"></span> DHAMAH AL JOUDAH PETROLEUM DOWNHOLES TOOLS COMPANY. All rights reserved.</p>
+                <p class="mt-2">Designed for easy content management and updates.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Data and Rendering -->
+    <script>
+        // Data Layer - All content is stored here for easy editing
+        const companyData = {
+            navigation: [
+                { "label": "Home", "href": "#home", "icon": "fas fa-home" },
+                { "label": "About", "href": "#about", "icon": "fas fa-info-circle" },
+                { "label": "Tools", "href": "#tools", "icon": "fas fa-tools" },
+                { "label": "Projects", "href": "#projects", "icon": "fas fa-project-diagram" },
+                { "label": "Testimonials", "href": "#testimonials", "icon": "fas fa-comments" },
+                { "label": "Contact", "href": "#contact", "icon": "fas fa-envelope" }
+            ],
+            
+            downholeTools: [
+                { 
+                    "title": "Drilling Jars", 
+                    "description": "High-impact drilling jars for stuck pipe situations with adjustable tension settings.",
+                    "image": "https://picsum.photos/400/300?random=201",
+                    "features": ["Impact force up to 50,000 lbs", "Adjustable tension", "High-temperature resistant"]
+                },
+                { 
+                    "title": "Stabilizers", 
+                    "description": "Full-gauge stabilizers for maintaining wellbore trajectory and reducing vibration.",
+                    "image": "https://picsum.photos/400/300?random=202",
+                    "features": ["Full-gauge design", "Reduced vibration", "Extended lifespan"]
+                },
+                { 
+                    "title": "MWD Systems", 
+                    "description": "Measurement While Drilling systems for real-time downhole data acquisition.",
+                    "image": "https://picsum.photos/400/300?random=203",
+                    "features": ["Real-time data", "High accuracy", "Robust design"]
+                },
+                { 
+                    "title": "Downhole Motors", 
+                    "description": "Positive displacement motors for directional drilling applications.",
+                    "image": "https://picsum.photos/400/300?random=204",
+                    "features": ["High torque output", "Directional capability", "Reliable performance"]
+                },
+                { 
+                    "title": "Casing Tools", 
+                    "description": "Specialized tools for casing running, cementing, and completion operations.",
+                    "image": "https://picsum.photos/400/300?random=205",
+                    "features": ["Precision engineering", "Corrosion resistant", "Easy operation"]
+                },
+                { 
+                    "title": "Fishing Tools", 
+                    "description": "Comprehensive fishing tool systems for efficient retrieval operations.",
+                    "image": "https://picsum.photos/400/300?random=206",
